@@ -1,37 +1,101 @@
 /* styles.css */
 
-/* Make <body> a flex container in column direction */
+/* Flex layout */
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* ensures it stretches full height */
+    min-height: 100vh;
   }
   
-  /* Make <main> a flex container in row direction */
   main {
     display: flex;
     flex-direction: row;
     flex: auto;
   }
   
-  /* Article takes 2/3 of space */
   article {
     flex: 2;
     overflow-y: auto;
     padding: 1rem;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
   }
   
-  /* Aside takes 1/3 of space */
   aside {
     flex: 1;
     overflow-y: auto;
     padding: 1rem;
+    background-color: #f1f1f1;
   }
   
-  /* Optional: style header and footer for visual clarity */
+  /* Header and footer */
   header, footer {
-    background-color: #e0e0e0;
+    background-color: #222;
+    color: white;
     padding: 1rem;
     text-align: center;
+  }
+  
+  header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Logo styling (already provided in base.css or here) */
+  .logo {
+    font-size: 2rem;
+    color: gold;
+  }
+  
+  /* Article content enhancements */
+  article h1, article h2, article h3 {
+    color: #004080;
+  }
+  
+  article p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Optional table style */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #e6f0ff;
+  }
+  
+  /* Responsive stacking if class is present */
+  .works_on_smartphone main {
+    flex-direction: column;
+  }
+  
+  .works_on_smartphone article,
+  .works_on_smartphone aside {
+    width: 100%;
+    flex: none;
   }
   
