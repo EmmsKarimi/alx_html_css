@@ -1,4 +1,165 @@
+/* General body reset */
 body {
-    background-color: lightyellow;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hero-section {
+  background-image: url('./images/Object.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+
+/* Header container */
+header {
+  height: 35px;
+  display: flex;
+  justify-content: center; /* centers nav within the header */
+}
+
+/* Nav container */
+nav {
+  width: 1103.41px; /* match Figma width */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+
+/* Logo image */
+nav img {
+  width: 167.02px;
+  height: 29.46px;
+}
+
+/* Menu list */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 53px; /* spacing between COURSE, PRICING, LOGIN */
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu links */
+nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* === Main Banner Section === */
+main > section:first-of-type {
+  width: 100%;
+  height: 1093px; /* From Figma */
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 100px;
+}
+
+
+/* Get schooled heading */
+main h1 {
+  font-size: 120px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+/* SMILES, GRIN, LAUGH spans */
+main span {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Register button */
+main button {
+  margin-top: 30px;
+  padding: 13px 25px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #C271FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 22px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+/* Learn from the pros heading */
+
+main h2 {
+  font-size: 32px;
+  font-weight: 700; /* Match Figma's mixed appearance */
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* Style for the "Learn" word */
+main h2 .purple {
+  color: #C271FF;
+  font-weight: inherit;   /* Ensures it doesn't look thinner or bolder */
+  font-size: inherit;     /* Prevents shrinking */
+  font-family: inherit;   /* Ensures consistency */
+}
+
+/* Pros container */
+main h2 + div {
+  display: flex;
+  justify-content: space-between; /* or gap */
+  align-items: flex-start;
+  flex-wrap: nowrap; /* Prevents wrapping */
+  width: 1009px; /* As per Figma */
+  margin: 0 auto; /* Center the whole row */
+  max-width: 100%; /* Optional fallback */
+}
+
+/* Individual profile card */
+main h2 + div > div {
+  width: 150px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* Profile images */
+main h2 + div > div img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #979797;
+  margin-bottom: 10px;
+}
+
+/* Name */
+main h2 + div > div h3 {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Title */
+main h2 + div > div p {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 24px;
+  margin: 5px 0 0 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
