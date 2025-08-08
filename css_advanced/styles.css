@@ -163,3 +163,77 @@ main h2 + div > div p {
   margin: 5px 0 0 0;
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+
+
+/* === Testimonial Section === */
+.testimonial-section {
+  background-color: #C271FF;
+  width: 100%;
+  height: 392px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0 20px; /* small side padding for safety */
+}
+
+.testimonial-section .testimonial-avatar {
+  margin-right: 53px; /* spacing from Figma */
+}
+
+.testimonial-section .testimonial-avatar img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 2px solid #979797;
+  object-fit: cover;
+}
+
+.testimonial-section .testimonial-text {
+  width: 730px;
+  height: 158px;
+  color: #FFFFFF;
+  position: relative; /* allows absolute positioning of children */
+}
+
+.testimonial-section blockquote {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33.6px; /* matches Figma exactly */
+  letter-spacing: 0;
+  color: #FFFFFF;
+  width: 730px; /* exact width */
+  height: auto; /* allow height to grow naturally */
+  margin: 0;
+  position: absolute;
+  top: 0; /* Y: 0 from container */
+  left: 0;
+  text-align: left;
+}
+.testimonial-section h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33.6px;
+  letter-spacing: 0;
+  margin: 0;
+  position: absolute;
+  top: 90px; /* Y: 90 from text block */
+  left: 0;
+}
+
+.testimonial-section p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 33.6px;
+  letter-spacing: 0;
+  margin: 0;
+  position: absolute;
+  top: 124px; /* Y: 124 from text block */
+  left: 0;
+}
