@@ -237,3 +237,156 @@ main h2 + div > div p {
   top: 124px; /* Y: 124 from text block */
   left: 0;
 }
+
+
+/* ===== Tutorials Section =====  */
+.tutorials-section {
+  background-color: #FFFFFF; /* Fill: FFFFFF */
+  width: 1228px;
+  height: 450px;
+  margin: 0 auto; /* center horizontally */
+  padding: 40px 0;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+.tutorials-section h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2; /* Figma line height: Auto */
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #071629; /* dark */
+}
+
+.tutorials-section h2 span {
+  color: #C271FF; /* purple */
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+
+/* Cards container */
+.tutorials-section .cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1228px; /* same as Figma width */
+}
+
+
+/* Tutorial Card */
+.tutorial-card {
+  width: 255px;
+  height: 335px;
+  background-color: #FFFFFF;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+}
+
+.tutorial-card .preview-container {
+  position: relative; /* so play-button can be centered within image */
+}
+
+.tutorial-card .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* perfect centering */
+  width: 64px;
+  height: 64px;
+  background-color: #FFFFFF;
+  border-radius: 50%; /* fully round */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* optional subtle shadow */
+}
+
+.tutorial-card .play-button i {
+  font-size: 24px; /* size of play icon */
+  color: #C271FF;
+}
+
+.tutorial-card img.preview {
+  width: 100%;
+  height: 154px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;    /* force square corners */
+}
+
+.tutorial-card h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #071629;
+  margin: 18px 13px 5px 13px;
+  text-align: left; /* force left alignment */
+}
+
+.tutorial-card p.description {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(7, 22, 41, 0.5);
+  margin: 0 13px 10px 13px;
+  line-height: 1.4;
+  text-align: left; /* force left alignment */
+}
+
+.tutorial-card .author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 13px;
+}
+
+.tutorial-card .author img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #979797;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tutorial-card .author h4 {
+  font-weight: 600;
+  font-size: 14px;
+  color: #C271FF;
+  margin: 0;
+}
+
+.tutorial-card .stars {
+  display: flex;
+  gap: 8px;
+  margin: 10px 13px;
+}
+
+.tutorial-card .stars i {
+  font-size: 15px;
+  color: #C271FF;
+}
+
+.tutorial-card .stars i.empty {
+  color: #D8D8D8;
+}
+
+.tutorial-card .duration {
+  position: absolute;
+  right: 13px;
+  bottom: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #C271FF;
+}
