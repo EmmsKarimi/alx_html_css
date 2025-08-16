@@ -1,0 +1,139 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Variables */
+  :root {
+    --main-color: #FF6565;
+    --text-color: #fff;
+    --max-width: 1000px;
+    --font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  /* General styles */
+  body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background: #000; /* fallback */
+  }
+  
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header styles */
+  .header {
+    background: url("Images/headphones_hero_1.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a:active {
+    color: var(--main-color);
+  }
+  
+  /* Hero text */
+  .hero {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero .hero-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 40px auto 0;
+  }
+  
+
+  .btn {
+    background: var(--main-color);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: opacity 0.3s;
+    margin-bottom: 40px;   /* space between button and next text */
+  }
+  
+  .btn:hover,
+  .btn:active {
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 480px) {
+    /* Hide nav links on mobile */
+    .nav-links {
+      display: none;
+    }
+  
+    /* Hero text adjustments */
+    .hero h1 {
+      font-size: 1.5rem;
+      line-height: 1.3;
+      padding: 0 10px; /* so text doesn’t touch edges */
+    }
+  
+    .hero .subtitle {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+  
+    .btn {
+      padding: 12px 30px;
+      font-size: 0.9rem;
+    }
+  
+    .hero .hero-text {
+      font-size: 0.9rem;
+      padding: 0 15px;
+      margin-top: 30px;  /* a bit less space */
+    }
+  }
+  
+  
